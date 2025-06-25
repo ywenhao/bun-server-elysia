@@ -2,10 +2,9 @@
   "name": "app",
   "version": "1.0.50",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "./server-bin",
     "dev": "bun run --watch src/index.ts",
-    "build": "bun build --compile --minify --target bun --outfile server-bin ./src/index.ts"
+    "build": "bun build --compile --minify --target=bun-linux-x64 --outfile server-bin ./src/index.ts"
   },
   "dependencies": {
     "elysia": "latest"
